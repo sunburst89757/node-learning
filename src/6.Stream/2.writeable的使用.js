@@ -1,11 +1,11 @@
 const fs = require("fs");
 const writer = fs.createWriteStream("./bar.txt", {
-  flags: "a",
+  flags: "r+",
   start: 4,
 });
 
 //  以流的形式写文件
-writer.write("啊啊啊", (err) => {
+writer.write("xiuxiu", (err) => {
   if (err) {
     console.log(err);
     return;
